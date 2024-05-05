@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grades</title>
+</head>
+<body>
+    <h1>Your Grades</h1>
+    <ul>
+        {% for grade in grades %}
+            <li>{{ grade.course }}: {{ grade.grade }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

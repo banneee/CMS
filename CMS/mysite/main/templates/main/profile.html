@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ request.user.username }}</h1>
+    <p>Bio: {{ profile.bio }}</p>
+
+    <!-- Logout button -->
+    <a href="{% url 'logout' %}" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
+</body>
+</html>
